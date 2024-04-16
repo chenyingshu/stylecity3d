@@ -54,14 +54,14 @@
 		<br>The Hong Kong University of Science and Technology
 		<br>2024. </p>
 		<div class="btn-group-light">
-			<a href="assets/ECCV24_StyleCity.pdf" class="disabled" target="_blank"><button class="btn-light btn-header">Paper</button></a>
-<!--			<a href="assets/ECCV24_StyleCity_supp_doc.pdf" target="_blank"><button class="btn-light btn-header">Supp</button></a>-->
+			<a href="assets/StyleCity.pdf" class="disabled" target="_blank"><button class="btn-light btn-header">Paper</button></a>
+<!--			<a href="assets/StyleCity_supp_doc.pdf" target="_blank"><button class="btn-light btn-header">Supp</button></a>-->
 <!--			<a href="#" target="_blank"><button class="btn-light btn-header">Arxiv</button></a>-->
 			<a href="https://github.com/hkust-vgd/#" class="disabled" target="_blank"><button class="btn-light btn-header">Code</button></a>
 			<a href="https://github.com/chenyingshu/google_3dtile_collection" target="_blank"><button class="btn-light btn-header">Data Collector</button></a>
 			<a href="https://github.com/chenyingshu/#" class="disabled" target="_blank"><button class="btn-light btn-header">Segmentation</button></a>
 		</div>
-		<video autoplay loop muted preload="metadata" poster="img/first_screen_cover.jpg">
+		<video autoplay loop muted playsinline preload="metadata" poster="img/first_screen_cover.jpg">
 			<source data-src="img/first_screen.mp4" type="video/mp4" src="img/first_screen.mp4">
 		</video>
 	</header>
@@ -141,11 +141,22 @@
 	<section class="subsection" id="framework">
 		<div>
 			<h2 class="text-dark card-title">Framework</h2>
+
+			<h5 class="text-center"> StyleCity Framework </h5>
 			<div class="figure-group col row-cols-md-1">
 				<img class="figure-img" src="img/pipeline_web.jpg">
 			</div>
 			<div class="figure-caption text-justify">
 				Framework overview of StyleCity. Taking style image and text references as input, StyleCity optimizes the neural texture field in a semantics-aware fashion with progressively scaled training views. Synthesized omnidirectional sky enhances style atmosphere and assists semantic style supervision.
+			</div>
+
+			<h5 class="text-center pt-4"> Style-Aligned Omnidirectional Sky Synthesis </h5>
+			<div class="figure-group col row-cols-md-1">
+				<img class="figure-img" src="img/pipeline_sky.jpg">
+			</div>
+			<div class="figure-caption">
+				(a) High-resolution sky synthesis with omnidirectional sampling. <br>
+				(b) Panoramic sky synthesis comparisons with SyncDiffusion using same seeds and text prompts.
 			</div>
 
 			<h4 class="text-dark pt-4"> Features:</h4>
@@ -194,7 +205,7 @@
                 </div>
 			</div>
 			<div class="row row-cols-1">
-				<video autoplay loop muted preload="metadata" style="pointer-events:none;" poster="img/denver_demo_cover.jpg">
+				<video autoplay loop muted playsinline preload="metadata" style="pointer-events:none;" poster="img/denver_demo_cover.jpg">
 					<source data-src="img/denver_demo_16sec.mp4" type="video/mp4" src="img/denver_demo_16sec.mp4">
 				</video>
 			</div>
@@ -215,7 +226,7 @@
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<div class="carousel-item active">
-						<video autoplay loop muted preload="metadata" controls  class="d-block w-100" poster="img/qual_more_res_cover.jpg">
+						<video autoplay loop muted playsinline preload="metadata" controls  class="d-block w-100" poster="img/qual_more_res_cover.jpg">
 							<source data-src="img/qual_more_res.mp4" type="video/mp4" src="img/qual_more_res.mp4">
 						</video>
 					</div>
@@ -291,10 +302,10 @@
 <!--		<div class="col row-cols-1 figure-group">-->
 
 		<div class="col row-cols-1 figure-group">
-			<video autoplay loop muted preload="metadata" controls class="d-block w-75 img-fluid">
+			<video autoplay loop muted playsinline preload="metadata" controls class="d-block img-fluid">
 				<source data-src="img/qual_comp_sg.mp4" type="video/mp4" src="img/qual_comp_sg.mp4">
 			</video>
-			<video autoplay loop muted preload="metadata" controls  class="d-block w-75 img-fluid">
+			<video autoplay loop muted playsinline preload="metadata" controls  class="d-block img-fluid">
 				<source data-src="img/qual_comp_ny.mp4" type="video/mp4" src="img/qual_comp_ny.mp4">
 			</video>
 
@@ -313,11 +324,11 @@
 	<section class="subsection" id="materials">
 		<h2 class="text-dark card-title">Materials</h2>
 		<div class="figure-group row-cols-lg-3 align-items-center justify-content-around">
-			<a href="assets/ECCV24_StyleCity.pdf"  class="figure-group-vertical text-decoration-none disabled" target="_blank">
+			<a href="assets/StyleCity.pdf"  class="figure-group-vertical text-decoration-none disabled" target="_blank">
 				<img class="figure-img img-thumbnail" src="img/paper_thumbnail.jpg">
 				<div class="figure-caption text-uppercase text-center text-black">Paper(TBA)</div>
 			</a>
-			<a href="assets/ECCV24_StyleCity_supp_doc.pdf" class="figure-group-vertical text-decoration-none disabled" target="_blank">
+			<a href="assets/StyleCity_supp_doc.pdf" class="figure-group-vertical text-decoration-none disabled" target="_blank">
 				<img class="figure-img img-thumbnail" src="img/sub_doc_thumbnail.jpg">
 				<div class="figure-caption text-uppercase text-center text-black">Supplementary Doc(TBA)</div>
 			</a>
@@ -367,6 +378,7 @@
 		<h2 class="text-dark card-title">Related Works</h2>
 		<p class="text-dark"><a href="https://github.com/chenyingshu/advances_3d_neural_stylization" target="_blank"> Advances in 3D Neural Stylization: A Survey</a>. 2023.
 		<br><a href="https://splice-vit.github.io/" target="_blank">Disentangling Structure and Appearance in ViT Feature Space</a>. TOG 2023.
+        <br><a href="https://syncdiffusion.github.io/" target="_blank">SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions</a>. NeurIPS 2023.
 		<br><a href="https://chenyingshu.github.io/time_of_day/" target="_blank">Time-of-Day Neural Style Transfer
 for Architectural Photographs</a>.  ICCP 2022.
 		<br><a href="https://github.com/luanfujun/deep-photo-styletransfer" target="_blank">Deep Photo Style Transfer</a>. CVPR 2017.
