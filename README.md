@@ -25,12 +25,11 @@ Creating large-scale virtual urban scenes with variant styles is inherently chal
 ## Citation
 If you find our tool or work useful in your research, please consider citing: 
 ```bibtex
-@inproceedings{chen2024stylecity,
-    title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},
-    author={Chen, Yingshu and Huang, Huajian, Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},
-    booktitle={Preprint},
-    year={2024},
-    organization={Arxiv}
+@article{chen2024stylecity,
+  title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},
+  author={Chen, Yingshu and Huang, Huajian and Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},
+  journal={arXiv preprint arXiv:2404.10681},
+  year={2024}
 }
 ```
 
