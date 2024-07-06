@@ -51,13 +51,12 @@
 		<p><a href="https://chenyingshu.github.io/" target="_blank">Yingshu Chen</a>, <a href="https://huajianup.github.io/" target="_blank">Huajian Huang</a><sup><i class="far fa-envelope"></i></sup>,  <a href="https://tuananh1007.github.io/" target="_blank">Tuan-Anh Vu</a>, <a href="https://scholar.google.com/citations?user=LAUhTjAAAAAJ&hl" target="_blank">Ka Chun Shum</a>,
 		<a href="https://www.saikit.org/" target="_blank">Sai-Kit Yeung</a>
 		<br>The Hong Kong University of Science and Technology
-		<br>2024. </p>
+		<h5>ECCV 2024</h5> </p>
 		<div class="btn-group-light">
 			<a href="assets/arxiv_2024_StyleCity.pdf" target="_blank"><button class="btn-light btn-header">Paper</button></a>
 			<a href="https://arxiv.org/abs/2404.10681" target="_blank"><button class="btn-light btn-header">Arxiv</button></a>
 <!--			<a href="assets/StyleCity_supp_doc.pdf" target="_blank"><button class="btn-light btn-header">Supp</button></a>-->
-<!--			<a href="#" target="_blank"><button class="btn-light btn-header">Arxiv</button></a>-->
-			<a href="https://github.com/hkust-vgd/#" class="disabled" target="_blank"><button class="btn-light btn-header">Code</button></a>
+			<a href="https://github.com/chenyingshu/stylecity3d" class="" target="_blank"><button class="btn-light btn-header">Code(TBA)</button></a>
 			<a href="https://github.com/chenyingshu/google_3dtile_collection" target="_blank"><button class="btn-light btn-header">Data Collector</button></a>
 			<a href="https://github.com/chenyingshu/#" class="disabled" target="_blank"><button class="btn-light btn-header">Segmentation</button></a>
 		</div>
@@ -340,7 +339,7 @@
 <!--				<i class="fab fa-vimeo figure-img logo-label "></i>-->
 <!--				<div class="figure-caption text-uppercase text-center text-black">High-res Results(Vimeo)</div>-->
 <!--			</a>-->
-			<a href="https://github.com/hkust-vgd/#" class="figure-group-vertical text-decoration-none disabled" target="_blank">
+			<a href="https://github.com/chenyingshu/stylecity3d" class="figure-group-vertical text-decoration-none" target="_blank">
 				<i class="fab fa-github figure-img logo-label "></i>
 				<div class="figure-caption text-uppercase text-center text-black">Code(TBA)</div>
 			</a>
@@ -354,16 +353,21 @@
 	<!-- Citation -->
 	<section class="subsection" id="citation">
 		<h2 class="text-dark card-title">Citation</h2>
-		<pre>
-			<code>
-@inproceedings{chen2024stylecity,
-    title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},
-    author={Chen, Yingshu and Huang, Huajian, Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},
-    booktitle={Preprint},
-    year={2024},
-    organization={Arxiv}
-}</code>
-		</pre>
+		<div class="citation-container">
+			<pre><code id="citationText">
+@article{chen2024stylecity,
+	title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},
+	author={Chen, Yingshu and Huang, Huajian and Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},
+	journal={arXiv preprint arXiv:2404.10681},
+	year={2024}
+}</code></pre>
+			<div class="clipboard-container">
+				<button class="clipboard-copy-btn btn"  onclick="copyCitation()" onmouseleave="resetTooltip()">
+					<i class="far fa-clone"></i>
+					<span class="tooltiptext" id="copyTooltip">Copy</span>
+				</button>
+			</div>
+		</div>
 	</section>
 
 	<!-- Acknowlegement -->

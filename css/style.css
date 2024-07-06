@@ -10051,3 +10051,65 @@ input[type="range"] {
   background-color: rgba(249, 234, 227, 1);
 
 }
+
+/* Citation copy button*/
+.citation-container {
+  display: flex;
+  justify-content: space-between;
+  /* similar to pre*/
+  /*-webkit-overflow-scrolling: touch;*/
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  /*white-space: pre;*/
+  padding: 0;
+}
+.clipboard-container{
+  display: block;
+}
+.clipboard-copy-btn {
+  position: relative;
+  padding: 0;
+  margin: 8px;
+  text-decoration: none;
+}
+.clipboard-copy-btn:focus, .clipboard-copy-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent;
+  color: #aaa;
+}
+.clipboard-copy-btn i {
+  font-size: 18px;
+}
+
+.clipboard-copy-btn .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  right: 150%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: small;
+}
+
+.clipboard-copy-btn .tooltiptext::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -2px;
+  border-style: solid;
+  border-color: transparent transparent transparent #555;
+}
+
+.clipboard-copy-btn:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

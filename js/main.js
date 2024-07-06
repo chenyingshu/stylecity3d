@@ -108,3 +108,16 @@ function setToggleAccessible(currentTarget) {
         toSlider.style.zIndex = 0;
     }
 }
+
+function copyCitation() {
+    /* Copy text into clipboard */
+    text_data = document.getElementById('citationText').textContent;
+    navigator.clipboard.writeText(text_data);
+    var tooltip = document.getElementById("copyTooltip");
+    tooltip.innerHTML = "Copied!";
+}
+
+function resetTooltip() {
+    var tooltip = document.getElementById("copyTooltip");
+    tooltip.innerHTML = "Copy";
+}
