@@ -9836,14 +9836,14 @@ h6,
 }
 /*narrow screen*/
 .header-style.subsection {
-  padding: 3%  3%   2%  3% ;
+  padding: 3%  3%  6%  3% ;
 }
 @media (min-width: 768px) {
     .subsection {
         padding: calc(2.5% + 4rem) 10% 0% 10%;
     }
   .header-style.subsection {
-    padding: 5% 10% 2% 10%;
+    padding: 5% 10% 4% 10%;
   }
 }
 @media (min-width: 992px) {
@@ -9852,7 +9852,7 @@ h6,
     }
    /* widest screen*/
    .header-style.subsection {
-      padding: 5%  0 2%  0;
+      padding: 5%  0 3%  0;
     }
 }
 
@@ -10112,4 +10112,13 @@ input[type="range"] {
 .clipboard-copy-btn:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+
+.header-text-notes {
+  background-color: rgba(249, 163, 146, 0.5);
+  left: 0;
+  bottom: 0;
+  padding: 1px 2px;
+  font-size: small;
 }
