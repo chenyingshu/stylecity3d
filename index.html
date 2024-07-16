@@ -46,16 +46,17 @@
 
 	<header class="subsection header-style">
 		<h1 class="title-name">StyleCity: Large-Scale 3D Urban Scenes Stylization
-			<br><h4 class="title-name">with Vision-and-Text Reference via Progressive Optimization</h4></h1>
+			</h1>
+<!--		<br><h4 class="title-name">with Vision-and-Text Reference via Progressive Optimization</h4>-->
 
 		<p><a href="https://chenyingshu.github.io/" target="_blank">Yingshu Chen</a>, <a href="https://huajianup.github.io/" target="_blank">Huajian Huang</a><sup><i class="far fa-envelope"></i></sup>,  <a href="https://tuananh1007.github.io/" target="_blank">Tuan-Anh Vu</a>, <a href="https://scholar.google.com/citations?user=LAUhTjAAAAAJ&hl" target="_blank">Ka Chun Shum</a>,
 		<a href="https://www.saikit.org/" target="_blank">Sai-Kit Yeung</a>
 		<br>The Hong Kong University of Science and Technology
 		<h5>ECCV 2024</h5> </p>
 		<div class="btn-group-light">
-			<a href="assets/arxiv_2024_StyleCity.pdf" target="_blank"><button class="btn-light btn-header">Paper</button></a>
+			<a href="assets/StyleCity_paper.pdf" target="_blank"><button class="btn-light btn-header">Paper</button></a>
 			<a href="https://arxiv.org/abs/2404.10681" target="_blank"><button class="btn-light btn-header">Arxiv</button></a>
-<!--			<a href="assets/StyleCity_supp_doc.pdf" target="_blank"><button class="btn-light btn-header">Supp</button></a>-->
+			<a href="assets/StyleCity_supp_doc.pdf" target="_blank"><button class="btn-light btn-header">Supp</button></a>
 			<a href="https://github.com/chenyingshu/stylecity3d" class="" target="_blank"><button class="btn-light btn-header">Code(TBA)</button></a>
 			<a href="https://github.com/chenyingshu/google_3dtile_collection" target="_blank"><button class="btn-light btn-header">Data Collector</button></a>
 			<a href="https://github.com/chenyingshu/#" class="disabled" target="_blank"><button class="btn-light btn-header">Segmentation</button></a>
@@ -111,7 +112,7 @@
 	<section class="subsection col" id="tldr">
 
 		<div class="figure-caption text-dark text-center">
-			<h6> <em>TL;DR:</em> <strong>StyleCity</strong> synthesizes style-align urban texture and 360° sky background, while keeping the scene identity intact.</h6>
+			<h6> <em>TL;DR:</em> <strong>StyleCity</strong> synthesizes style-aligned urban texture and 360° sky background, while keeping scene identity intact.</h6>
 		</div>
 		<div class="figure-group row-cols-md-1">
 			<img class="figure-img" src="img/teaser.jpg">
@@ -328,9 +329,9 @@
 				<img class="figure-img img-thumbnail" src="img/paper_thumbnail.jpg">
 				<div class="figure-caption text-uppercase text-center text-black">Paper</div>
 			</a>
-			<a href="assets/StyleCity_supp_doc.pdf" class="figure-group-vertical text-decoration-none disabled" target="_blank">
+			<a href="assets/StyleCity_supp_doc.pdf" class="figure-group-vertical text-decoration-none" target="_blank">
 				<img class="figure-img img-thumbnail" src="img/sub_doc_thumbnail.jpg">
-				<div class="figure-caption text-uppercase text-center text-black">Supplementary Doc(TBA)</div>
+				<div class="figure-caption text-uppercase text-center text-black">Supplementary Doc</div>
 			</a>
 			<a href="#" class="figure-group-vertical text-decoration-none disabled" target="_blank">
 				<i class="fab fa-youtube figure-img logo-label "></i>
@@ -355,13 +356,21 @@
 	<section class="subsection" id="citation">
 		<h2 class="text-dark card-title">Citation</h2>
 		<div class="citation-container">
+<!--			<pre><code id="citationText">-->
+<!--@article{chen2024stylecity,-->
+<!--	title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},-->
+<!--	author={Chen, Yingshu and Huang, Huajian and Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},-->
+<!--	journal={arXiv preprint arXiv:2404.10681},-->
+<!--	year={2024}-->
+<!--}</code></pre>-->
 			<pre><code id="citationText">
-@article{chen2024stylecity,
-	title={StyleCity: Large-Scale 3D Urban Scenes Stylization with Vision-and-Text Reference via Progressive Optimization},
+@inproceedings{chen2024stylecity,
+	title={StyleCity: Large-Scale 3D Urban Scenes Stylization},
 	author={Chen, Yingshu and Huang, Huajian and Vu, Tuan-Anh and Shum, Ka Chun and Yeung, Sai-Kit},
-	journal={arXiv preprint arXiv:2404.10681},
+	booktitle={Proceedings of the European Conference on Computer Vision},
 	year={2024}
 }</code></pre>
+
 			<div class="clipboard-container">
 				<button class="clipboard-copy-btn btn"  onclick="copyCitation()" onmouseleave="resetTooltip()">
 					<i class="far fa-clone"></i>
@@ -371,11 +380,6 @@
 		</div>
 	</section>
 
-	<!-- Acknowlegement -->
-<!--	<section class="subsection">
-		<h2 class="text-dark card-title"> Acknowlegements </h2>
-		<p>This paper was partially supported by an internal grant from	HKUST.</p>
-	</section> -->
 
 	<!-- Other Related Works -->
 	<section class="subsection">
@@ -390,6 +394,14 @@ for Architectural Photographs</a>.  ICCP 2022.
 <!--		<br><a href="https://lukashoel.github.io/stylemesh/">StyleMesh: Style Transfer for Indoor 3D Scene Reconstructions</a>.  CVPR 2022.-->
 <!--		<br><a href="https://www.cs.cornell.edu/projects/arf/">ARF: Artistic Radiance Fields</a>.  ECCV 2022.-->
 <!--		<br><a href="https://instruct-nerf2nerf.github.io/">Instruct-NeRF2NeRF: Editing 3D Scenes with Instructions</a>.  ICCV 2023. </p>-->
+	</section>
+
+
+	<!-- Acknowlegement -->
+	<section class="subsection">
+		<h2 class="text-dark card-title"> Acknowlegements </h2>
+		<p>The paper was partially supported by a grant from the Research Grants Council of the Hong
+			Kong Special Administrative Region, China (Project No. HKUST 16202323) and an internal grant from HKUST (R9429).</p>
 	</section>
 
 	<section class="subsection footer">
