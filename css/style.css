@@ -549,6 +549,15 @@ mark,
   height: auto;
   max-height: 8.1rem;
 }
+.img-thumbnail-landscape {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  width: auto;
+  /*width: 150px; !*in case*!*/
+  max-height: 100%;
+  max-width: 8.1rem;
+}
 
 .figure {
   display: inline-block;
@@ -9920,7 +9929,7 @@ code {
 }
 
 a:hover i.logo-label,
-a:hover .img-thumbnail {
+a:hover .img-thumbnail, a:hover .img-thumbnail-landscape {
   transform: scale(1.1);
 }
 
