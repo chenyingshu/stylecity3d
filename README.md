@@ -17,7 +17,8 @@ Creating large-scale virtual urban scenes with variant styles is inherently chal
 
 ## Updates:
 - [ ] :hourglass_flowing_sand: Coming soon: StyleCity source code and samples
-- [ ] :hourglass_flowing_sand: Coming soon: Segmentation model and 2D-to-3D segmentation script
+- [x] Segmentation model and 2D segmentation script: [city segmentation](https://github.com/chenyingshu/city_segmentation)
+- [ ] :hourglass_flowing_sand: Coming soon: 2D-to-3D segmentation script
 - [ ] :hourglass_flowing_sand: Coming soon: Omnidirectional sky synthesis source code
 - [x] [Project page](https://www.chenyingshu.com/stylecity3d/) (Full materials: paper, poster, video, demo, etc.)
 - [x] Data collector (Google Tiles API)
