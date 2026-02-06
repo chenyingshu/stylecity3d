@@ -1,0 +1,10 @@
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+torchaudio==0.12.1
+transformers==4.28
+diffusers==0.15.1
+opencv-python==4.5.1.48
+huggingface-hub==0.25.2
+numpy<2
+lpips
+tqdm
